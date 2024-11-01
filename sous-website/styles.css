@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 2em; /*Define o tamanho da fonte: duas vezes o tamanho da fonte base.*/
+}
+
+/* Estilos normais dos botões */
+.navbar a {
+    color: white; /* Cor padrão dos links */
+    padding: 10px 15px;
+    text-decoration: none; /* Remove o sublinhado */
+    transition: background-color 0.3s ease; /* Animação suave */
+    background-color: transparent; /* Define o fundo como transparente */
+}
+
+/* Mudança de cor para o botão "Início" ao passar o mouse */
+.navbar a.inicio:hover {
+    background-color: #99ccff; /* Exemplo: vermelho claro */
+}
+
+/* Mudança de cor para o botão "Sobre Nós" ao passar o mouse */
+.navbar a.sobre:hover {
+    background-color: #99ccff; /* Exemplo: verde claro */
+}
+
+/* Mudança de cor para o botão "ONGs" ao passar o mouse */
+.navbar a.ongs:hover {
+    background-color: #99ccff; /* Exemplo: azul claro */
+}
+
+/* Mudança de cor para o botão "Entrar" ao passar o mouse */
+.navbar a.entrar:hover {
+    background-color: #99ccff; /* Exemplo: amarelo claro */
+}
+
+
+.hero {
+    background-image: url('imagem1.png'); /* Caminho da imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir todo o espaço */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    padding: 100px 20px;
+    color: white;
+    height: 100vh; /* Faz a seção ocupar 100% da altura da tela */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Alinha o conteúdo ao lado esquerdo */
+    padding-left: 50px; /* Define um espaçamento da esquerda */
+
+}
+
+/* Gambiarra pura */
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px; 
+    margin-top: -10px; /* Ajusta a frase */
+}
+
+.ongs {
+    padding: 50px 20px;
+    background-color: #e3e3e3;
+    text-align: center;
+    height: auto; /* Define a altura automaticamente conforme o conteúdo */
+    min-height: 650px; /* Altura mínima da parte de conheça as ongs*/
+}
+
+.ong-card {
+    background-color: white;
+    margin: 50px;
+    padding: 30px;
+    border-radius: 10px; /* Bordas redondas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    display: inline-block; /* os blocos ficam em linha */
+    width: 200px;
+}
+
+.container {
+    background-image: url('imagem2.png'); /* Caminho da imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir todo o espaço */
+    background-position: center; /* Centraliza a imagem */
+    padding: 100px 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro com transparência sobre a imagem */
+    height: 100vh; /* Faz a seção ocupar 100% da altura da tela */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Alinha o conteúdo ao lado esquerdo */
+    padding-left: 50px; /* Define um espaçamento da esquerda */
+}
+
+.login-box {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.login-box h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    margin-bottom: 15px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+.options a {
+    font-size: 0.9em;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer; /* Interativo */
+}
+
+.bottom-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.register-btn, .back-btn {
+    background-color: #333;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    color: white;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.text-overlay h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.text-overlay h2 {
+    font-size: 1.8em;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+
+.contact {
+    background-color: #003366;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #001a33;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+footer .social-media a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
