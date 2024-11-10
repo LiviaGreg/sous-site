@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 2em; /*Define o tamanho da fonte: duas vezes o tamanho da fonte base.*/
+}
+
+/* Estilos normais dos botões */
+.navbar a {
+    color: white; /* Cor padrão dos links */
+    padding: 10px 15px;
+    text-decoration: none; /* Remove o sublinhado */
+    transition: background-color 0.3s ease; /* Animação suave */
+    background-color: transparent; /* Define o fundo como transparente */
+}
+
+/* Mudança de cor para o botão "Início" ao passar o mouse */
+.navbar a.inicio:hover {
+    background-color: #99ccff; /* Exemplo: vermelho claro */
+}
+
+/* Mudança de cor para o botão "Sobre Nós" ao passar o mouse */
+.navbar a.sobre:hover {
+    background-color: #99ccff; /* Exemplo: verde claro */
+}
+
+/* Mudança de cor para o botão "ONGs" ao passar o mouse */
+.navbar a.ongs:hover {
+    background-color: #99ccff; /* Exemplo: azul claro */
+}
+
+/* Mudança de cor para o botão "Entrar" ao passar o mouse */
+.navbar a.entrar:hover {
+    background-color: #99ccff; /* Exemplo: amarelo claro */
+}
+
+
+.hero {
+    background-image: url('imagem1.jpeg'); /* Caminho da imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir todo o espaço */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat;
+    padding: 100px 20px;
+    color: white;
+    height: 100vh; /* Faz a seção ocupar 100% da altura da tela */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Alinha o conteúdo ao lado esquerdo */
+    padding-left: 50px; /* Define um espaçamento da esquerda */
+
+}
+
+/* Gambiarra pura */
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px; 
+    margin-top: -10px; /* Ajusta a frase */
+    color: white
+}
+
+.ongs {
+    padding: 50px 20px;
+    background-color: #e3e3e3;
+    text-align: center;
+    height: auto; /* Define a altura automaticamente conforme o conteúdo */
+    min-height: 650px; /* Altura mínima da parte de conheça as ongs*/
+}
+
+.ong-card {
+    background-color: white;
+    margin: 50px;
+    padding: 30px;
+    border-radius: 10px; /* Bordas redondas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    display: inline-block; /* os blocos ficam em linha */
+    width: 200px;
+}
+
+.contact {
+    background-color: #003366;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+footer {
+    background-color: #001a33;
+    color: white;
+    padding: 10px;
+    text-align: center;
+
+}
+
+footer .social-media a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+
+
+/*Patinha solidária*/
+
+body.ong-page {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header.ong-header {
+    background-color: #87ceeb;
+    padding: 10px;
+    color: white;
+}
+
+.content {
+    display: flex;
+    flex-direction: column; /* ou row para alinhar horizontalmente */
+    align-items: flex-start; /* alinha o conteúdo à esquerda */
+    justify-content: flex-star; /* alinha o conteúdo no início */
+    max-width: 800px;
+    margin: 70px auto;
+    padding: 30px;
+    text-align: left;
+    flex: 1;
+}
+
+.content p {
+    display: flex;
+    line-height: 1.6;
+}
+
+
+.rodape {
+
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    position: relative;
+    text-align: center;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* CSS para a moldura da foto */
+.perfil{
+    position: relative;
+    margin: 0 auto; /* centraliza o elemento */
+    top: 20px; /* distância do topo */
+    width: 200px; /* largura da moldura */
+    height: 200px; /* altura da moldura */
+    border-radius: 70%; /* arredonda a borda */
+    overflow: hidden; /* esconde a parte da imagem que ultrapassa o círculo */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* sombra ao redor */
+    border: 5px solid #87ceeb; /* borda ao redor da imagem */
+    z-index: 10; /* garante que a imagem fique acima de outros elementos */
+}
+
+/* Estilo para a imagem dentro da moldura */
+.perfil img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* garante que a imagem se ajuste ao círculo */
+    border-radius: 70%; /* arredonda a imagem para se encaixar na moldura */
+}
+
+/* tabela */
+.tabela-container {
+    left: 300px; /* distância do lado esquerdo */
+    top: 200px; /* distância do topo */
+    max-width: 600px; /* Define a largura máxima da tabela */
+    padding: 10px; /* Adiciona um espaço interno ao contêiner */
+    border-radius: 10px; /* Borda arredondada para a tabela */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave em torno da tabela */
+
+}
+
+
+table {
+    width: 100%; /* A tabela ocupa 100% da largura do contêiner */
+    background-color: white; /* Fundo branco para a tabela */
+}
+
+th, td {
+    padding: 10px; /* Espaçamento interno das células */
+    text-align: left; /* Alinha o texto à esquerda */
+    border-bottom: 1px solid #ddd; /* Linha de separação entre as células */
+}
+
+tr:hover {
+    background-color: #f2f2f2; /* Altera a cor de fundo da linha ao passar o mouse */
+}
+
+/*LOGIN 
+
+/* Reset de estilo */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo da seção de login */
+.login-section {
+    background-color: #f2f2f2; /* Fundo claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa a altura total da tela */
+    padding: 20px;
+}
+
+.login-cont {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 400px; /* Largura máxima */
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em; /* Tamanho da fonte maior */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    color: #333; /* Cor do texto */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px; /* Espaçamento inferior */
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 1em;
+    width: 100%;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+
+.options label {
+    color: #555; /* Cor do texto */
+}
+
+.options a {
+    color: #007BFF; /* Cor do link */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+button[type="submit"] {
+    background-color: #007BFF; /* Cor do botão */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 1em;
+    cursor: pointer; /* Muda o cursor */
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.buttons button {
+    background-color: #333; /* Cor de fundo */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor */
+}
+
+.buttons button:hover {
+    background-color: #555; /* Cor de fundo ao passar o mouse */
+}
