@@ -1,0 +1,142 @@
+/* Estilos globais */
+* {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimento padrão */
+    box-sizing: border-box; /* Define o modelo de caixa para incluir bordas e preenchimentos */
+    font-family: Arial, sans-serif; /* Define a fonte padrão para o site */
+}
+
+/* Estilo do corpo e fundo */
+body {
+    background-color: #f4f4f9; /* Cor de fundo padrão */
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    height: 100vh; /* Define a altura como 100% da tela */
+    background-image: url('imagem1.jpeg'); /* Define a imagem de fundo */
+    background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem de fundo */
+    animation: fadeIn 1s ease-in-out; /* Aplica uma animação de entrada */
+}
+
+/* Animação de entrada do corpo */
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Inicia com o conteúdo invisível */
+    }
+    100% {
+        opacity: 1; /* Termina com o conteúdo visível */
+    }
+}
+
+/* Seção do formulário com fundo transparente e embaçado */
+.cadastro-section {
+    width: 100%; /* Largura total */
+    max-width: 800px; /* Largura máxima do formulário */
+    padding: 40px; /*espaco interno da caixinha de cadastro*/
+    margin: 20px;
+    border-radius: 8px; /* Arredonda os cantos do formulário */
+    background-color: white; /* Fundo branco semitransparente */
+    max-height: 90vh; /* Limita a altura do formulário */
+}
+
+/* Título do formulário */
+.cadastro-container h2 {
+    text-align: center; /* Centraliza o texto */
+    font-size: 1.8em; /* Aumenta o tamanho da fonte */
+    color: #333; /* Cor do texto */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+/* Estilo dos campos de entrada */
+.input-box {
+    margin-bottom: 15px; /* Espaçamento entre os campos */
+    display: flex;
+    flex-direction: column; /* Organiza o rótulo acima do campo de entrada */
+}
+
+.input-box label {
+    font-size: 1em; /* Tamanho do texto do rótulo */
+    font-weight: bold; /* Destaca o rótulo */
+    color: #333; /* Cor do rótulo */
+    margin-bottom: 5px; /* Espaço abaixo do rótulo */
+}
+
+/* Distribuição horizontal para campos de entrada */
+.form-row {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se reorganizem em várias linhas */
+    justify-content: space-between; /* Distribui os itens uniformemente */
+    gap: 15px; /* Espaço entre os itens */
+}
+
+.input-box input,
+.input-box select {
+    width: 100%; /* Largura completa do contêiner pai */
+    padding: 10px; /* Espaçamento interno */
+    font-size: 1em; /* Tamanho da fonte */
+    border: 1px solid #ddd; /* Bordas finas ao redor dos campos */
+    border-radius: 5px; /* Bordas arredondadas */
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo semitransparente */
+}
+
+.input-box input[type="file"] {
+    padding: 5px; /* Reduz o espaçamento interno para campos de upload */
+}
+
+/* Estilo para os campos de senha */
+.input-box input[type="password"] {
+    width: calc(100% - 100px); /* Ajusta a largura para incluir checkbox de mostrar senha */
+}
+
+.input-box input[type="checkbox"] {
+    width: auto; /* Largura automática para checkbox */
+    margin-left: 10px; /* Espaço entre checkbox e texto */
+}
+
+.input-box .toggleSenha {
+    display: flex;
+    align-items: center; /* Alinha itens verticalmente no centro */
+    margin-top: 5px; /* Espaçamento acima do checkbox */
+}
+
+/* Estilo do botão */
+.submit-btn {
+    width: 100%; /* Largura completa do botão */
+    padding: 12px; /* Espaçamento interno do botão */
+    background-color: #007BFF; /* Cor de fundo do botão */
+    border: none; /* Remove bordas padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    color: white; /* Cor do texto do botão */
+    font-size: 1.2em; /* Aumenta o tamanho do texto */
+    cursor: pointer; /* Exibe cursor de "mão" */
+    transition: background-color 0.3s ease; /* Transição suave para mudança de cor */
+}
+
+.submit-btn:hover {
+    background-color: #0056b3; /* Cor do botão ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .cadastro-section {
+        padding: 15px; /* Reduz o preenchimento em telas menores */
+    }
+
+    .form-row {
+        flex-direction: column; /* Organiza os campos verticalmente em telas menores */
+    }
+
+    .input-box {
+        margin-bottom: 12px; /* Reduz o espaçamento entre campos */
+    }
+
+    .input-box input,
+    .input-box select {
+        padding: 8px; /* Reduz o espaçamento interno dos campos */
+    }
+
+    .submit-btn {
+        padding: 10px; /* Reduz o preenchimento do botão */
+    }
+}
